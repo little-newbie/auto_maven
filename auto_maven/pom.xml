@@ -34,6 +34,11 @@
 	                <goals>
 	                    <goal>jmeter</goal>
 	                </goals>
+	                <configuration>
+                      <testFilesIncluded>
+                          <jMeterTestFile>test.jmx</jMeterTestFile>
+                      </testFilesIncluded>
+	                 </configuration>
 	            </execution>
 	        </executions>
 	    </plugin>
