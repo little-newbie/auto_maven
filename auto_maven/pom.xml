@@ -34,6 +34,11 @@
 			<version>1.0.4</version>
 		</dependency>
 		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.44</version>
+		</dependency>
+		<dependency>
 			<groupId>logkit</groupId>
 			<artifactId>logkit</artifactId>
 			<version>1.2</version>
@@ -62,6 +67,14 @@
 				<executions>
 					<execution>
 						<id>test</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jmeter</goal>
+						</goals>
+						<!-- <configuration> <resultsFileFormat>csv</resultsFileFormat> </configuration> -->
+					</execution>
+					<execution>
+						<id>invoice</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>jmeter</goal>
